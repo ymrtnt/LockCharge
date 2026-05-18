@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location de Casiers - Grasse Campus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ 
+    <header class="hero">
+        <div class="overlay">
+            <h1>Location de Casiers</h1>
+            <p>Réservez votre casier sécurisé par tranche de 1h30</p>
+            <a href="#reservation" class="btn">Réserver maintenant</a>
+            
+        </div>
+    </header>
+<img src="photo/grasse campus logo.png" alt="logo grasse campus" class="logo-bottom">
+    
+    <section class="presentation">
+        <h2>Notre Concept</h2>
+        <p>
+            Les casiers Grasse Campus permettent aux étudiants de stocker
+            leur téléphone, tablette,etc... en toute sécurité durant la journée.
+        </p>
+
+        <p>
+            Les réservations se font par tranche de 1h30 afin de garantir
+            une rotation simple et efficace pour tous les étudiants.
+        </p>
+
+        <p>
+            Simple, rapide et totalement gratuit.
+        </p>
+    </section>
+
+  
+    <section id="reservation" class="reservation">
+        <h2>Réserver un casier</h2>
+
+        <form id="lockerForm">
+
+            <div class="form-group">
+                <label>École</label>
+                <select required>
+                    <option value="">Choisir une école</option>
+                    <option>ECAM EPMI</option>
+                    <option>SUP DE COM</option>
+                    <option>IDRAC</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Année</label>
+                <select required>
+                    <option value="">Choisir une année</option>
+                    <option>1ère année</option>
+                    <option>2ème année</option>
+                    <option>3ème année</option>
+                    <option>4ème année</option>
+                    <option>5ème année</option>
+                </select>
+            </div>
+<div></div>
+            <div class="form-group">
+                <label>Prénom</label>
+                <input type="text" placeholder="Votre prénom" required>
+            </div>
+
+            <div class="form-group">
+                <label>Nom</label>
+                <input type="text" placeholder="Votre nom" required>
+            </div>
+
+            <div class="form-group">
+                <label>Créneau horaire</label>
+                <select required>
+                    <option value="">Choisir un créneau</option>
+                    <option>08h - 9h30</option>
+                    <option>9h30 - 11h</option>
+                    <option>11hh - 12h30</option>
+                    <option>12h30 - 14h</option>
+                    <option>14h - 15h30h</option>
+                    <option>15h30 - 17h</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn">Valider la réservation</button>
+
+        </form>
+
+        <p id="confirmation"></p>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
